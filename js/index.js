@@ -6,7 +6,7 @@ var tblCtrl = function($scope, $http) {
   $scope.currentPage = 0;
   $scope.pageSize = 10;
 
-  $http.get("http://jsonplaceholder.typicode.com/posts") //Obtener los datos
+  $http.get("https://jsonplaceholder.typicode.com/posts") //Obtener los datos
   .success(function(data){
     console.log(data);
    $scope.posts = data;
